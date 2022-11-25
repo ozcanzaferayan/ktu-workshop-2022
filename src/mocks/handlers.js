@@ -14,6 +14,20 @@ export const handlers = [
                         author: 'typicode',
                         image: 'https://loremflickr.com/1234/2345/cats',
                     },
+                    {
+                        id: 2,
+                        title: 'json-server',
+                        content: 'Lorem Ipsum',
+                        author: 'typicode',
+                        image: 'https://loremflickr.com/1234/2345/cats',
+                    },
+                    {
+                        id: 23,
+                        title: 'json-server',
+                        content: 'Lorem Ipsum',
+                        author: 'typicode',
+                        image: 'https://loremflickr.com/1234/2345/cats',
+                    },
                 ]),
             );
         },
