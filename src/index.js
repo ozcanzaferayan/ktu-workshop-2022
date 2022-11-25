@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 
 import App from './App';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import AppRouter from './routes/Router';
 
 if (process.env.NODE_ENV === 'development') {
     const { worker } = require('./mocks/browser');
@@ -14,7 +16,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
     <React.StrictMode>
-        <App />
+        <BrowserRouter>
+            <AppRouter />
+        </BrowserRouter>
     </React.StrictMode>,
 );
 
