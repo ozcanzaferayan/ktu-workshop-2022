@@ -1,5 +1,8 @@
 // @ts-nocheck
-import React, { useEffect, useState } from 'react';
+import React, {
+    useEffect,
+    useState,
+} from 'react';
 
 const Posts = () => {
     const [posts, setPosts] = useState([]);
@@ -10,8 +13,15 @@ const Posts = () => {
     }, []);
 
     return posts.map((post) => (
-        <div key={post.id} style={styles.container}>
-            <img src={post.image} alt={post.title} style={styles.image} />
+        <div
+            key={post.id}
+            style={styles.container}
+        >
+            <img
+                src={post.image}
+                alt={post.title}
+                style={styles.image}
+            />
             <div style={styles.textsContainer}>
                 <h2>{post.title}</h2>
                 <p>{post.author}</p>
